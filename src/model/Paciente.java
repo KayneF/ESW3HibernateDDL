@@ -1,6 +1,8 @@
 package model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.UniqueElements;
 
@@ -21,5 +23,12 @@ public class Paciente extends Pessoa {
 
     public void setBeneficiario(int beneficiario) {
         this.beneficiario = beneficiario;
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "beneficiario=" + beneficiario +
+                '}';
     }
 }

@@ -65,4 +65,14 @@ public class Consulta {
     public void setFichaPaciente(Ficha fichaPaciente) {
         this.fichaPaciente = fichaPaciente;
     }
+
+    @Override
+    public String toString() {
+        return "Consulta{" +
+                "dataConsulta=" + dataConsulta +
+                ", consultaPaciente=" + consultaPaciente +
+                ", consultaMedico=" + consultaMedico +
+                ", fichaPaciente=" + fichaPaciente +
+                '}';
+    }
 }

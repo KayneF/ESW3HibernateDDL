@@ -96,4 +96,17 @@ public class Endereco {
     public void setUf(UF uf) {
         this.uf = uf;
     }
+
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "id=" + id +
+                ", logradouro='" + logradouro + '\'' +
+                ", numero=" + numero +
+                ", cep=" + cep +
+                ", complemento='" + complemento + '\'' +
+                ", cidade='" + cidade + '\'' +
+                ", uf=" + uf +
+                '}';
+    }
 }

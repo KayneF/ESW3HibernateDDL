@@ -11,7 +11,7 @@ import jakarta.validation.constraints.NotNull;
 public class Ficha {
 
     @Id
-    @Column(name = "id_ficha", length = 10)
+    @Column(name = "ficha_id", length = 10)
     @NotNull
     private int id;
 
@@ -95,5 +95,18 @@ public class Ficha {
 
     public void setDesenvolvimento(String desenvolvimento) {
         this.desenvolvimento = desenvolvimento;
+    }
+
+    @Override
+    public String toString() {
+        return "Ficha{" +
+                "id=" + id +
+                ", cirurgias='" + cirurgias + '\'' +
+                ", medicamentosAdm='" + medicamentosAdm + '\'' +
+                ", alergias='" + alergias + '\'' +
+                ", historicoFam='" + historicoFam + '\'' +
+                ", habitos='" + habitos + '\'' +
+                ", desenvolvimento='" + desenvolvimento + '\'' +
+                '}';
     }
 }

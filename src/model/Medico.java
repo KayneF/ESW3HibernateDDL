@@ -1,6 +1,8 @@
 package model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
@@ -19,5 +21,12 @@ public class Medico extends Pessoa {
 
     public void setEspecialidade(Especialidade especialidade) {
         this.especialidade = especialidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Medico{" +
+                "especialidade=" + especialidade +
+                '}';
     }
 }
